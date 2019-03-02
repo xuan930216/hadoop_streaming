@@ -9,8 +9,8 @@ for line in sys.stdin:
     count = int(count)
     if key != current_word:
         if current_word:
-            print "%s\t%d"%(current_word, word_count)
+            print(current_word, word_count, sep="\t")
         current_word = key
     word_count += count
 if current_word:
-    print "%s\t%d"%(current_word, word_count)
+    print(current_word, word_count, sep="\t")
